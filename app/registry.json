@@ -11,16 +11,19 @@
         "zh-TW": "會話選單：複製最後一則 AI 訊息"
       },
       "description": {
-        "default": "Adds a \"Copy last AI message\" item to the sidebar conversation menu (⋯ / right-click) and copies the last AI reply of the opened conversation to the clipboard.",
-        "zh-CN": "在侧边栏会话的「⋯」/ 右键菜单中新增一项「复制最后一条AI消息」，一键把当前对话最后一条 AI 回复复制到剪贴板。",
-        "zh-TW": "在側邊欄會話的「⋯」/ 右鍵選單中新增一項「複製最後一則 AI 訊息」，一鍵把目前對話最後一則 AI 回覆複製到剪貼簿。"
+        "default": "Adds a \"Copy last AI message\" item to the sidebar conversation menu (⋯ / right-click) and copies that conversation's last AI reply to the clipboard.",
+        "zh-CN": "在侧边栏会话的「⋯」/ 右键菜单中新增一项「复制最后一条AI消息」，一键把该会话的最后一条 AI 回复复制到剪贴板。",
+        "zh-TW": "在側邊欄會話的「⋯」/ 右鍵選單中新增一項「複製最後一則 AI 訊息」，一鍵把該會話最後一則 AI 回覆複製到剪貼簿。"
       },
       "author": "MayDay-wpf",
       "repo": "https://github.com/MayDay-wpf/snow-copy-last-ai-message",
-      "version": "1.0.0",
-      "tag": "v1.0.0",
+      "version": "1.1.0",
+      "tag": "v1.1.0",
       "asset": "copy-last-ai-message.user.js",
-      "sha256": "f9e06cdbda18bdaa19bd1ab6e4ee422d3e34d5091597afdccd72b085fe052fdc",
+      "sha256": "88d20136bc882e480b688a74e2e702496f2dc2a168d585f2e0cda13b6b08723b",
+      "privacy": [
+        "messages"
+      ],
       "tags": [
         "client-script",
         "clipboard",
