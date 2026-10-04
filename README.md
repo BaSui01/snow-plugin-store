@@ -54,6 +54,7 @@ CI 校验通过并由维护者合并后，客户端在「插件 → 插件市场
 | 字段 | 必填 | 说明 |
 | --- | --- | --- |
 | `id` | 是 | 插件唯一 ID，必须与 `plugin.json` 的 `id` 完全一致；字母、数字、点、短横线、下划线，最长 96 |
+| `kind` | 否 | 条目类型：`plugin`（面板插件，默认）或 `script`（用户脚本）；脚本的 Release 资产是 `.user.js` 文件本身 |
 | `name` | 是 | 展示名，字符串或本地化对象（如 `{"default": "...", "zh-CN": "..."}`） |
 | `description` | 是 | 简介，格式同上 |
 | `repo` | 是 | 插件仓库地址，形如 `https://github.com/owner/repo` |
@@ -70,6 +71,14 @@ CI 校验通过并由维护者合并后，客户端在「插件 → 插件市场
 | `icon` | 否 | 市场列表图标，如 `lucide:Puzzle`；缺省显示占位图标 |
 
 下载地址的推导规则：`https://github.com/<owner>/<repo>/releases/download/<tag>/<asset>`。
+
+### 用户脚本（kind: script）
+
+`kind` 为 `script` 时，Release 资产是单个 `.user.js` 文件（不要打包成 zip）：
+
+- 脚本必须包含 `// ==UserScript==` 元数据头（`@name` 必填）；客户端脚本（定制应用窗口）另需 `@snow-target client`；
+- 安装后脚本以条目的 `id` 作为脚本标识，更新时原地覆盖同一脚本，不影响其启用状态；
+- 浏览器脚本（注入内置浏览器页面）与客户端脚本使用同一条目结构。
 
 ## 示例条目
 

@@ -77,6 +77,14 @@ for (const [index, entry] of plugins.entries()) {
     seenIds.add(id);
   }
 
+  if (
+    entry.kind !== undefined &&
+    entry.kind !== "plugin" &&
+    entry.kind !== "script"
+  ) {
+    errors.push(`${label}.kind must be "plugin" or "script"`);
+  }
+
   if (!isLocalizedText(entry.name)) {
     errors.push(`${label}.name must be a non-empty string or a localized object`);
   }

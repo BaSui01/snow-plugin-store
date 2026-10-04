@@ -31,6 +31,7 @@
           "type": "string",
           "pattern": "^[A-Za-z0-9_-][A-Za-z0-9._-]{0,95}$"
         },
+        "kind": { "type": "string", "enum": ["plugin", "script"] },
         "name": { "$ref": "#/$defs/localizedText" },
         "description": { "$ref": "#/$defs/localizedText" },
         "author": { "type": "string" },
