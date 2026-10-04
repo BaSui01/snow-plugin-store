@@ -1,0 +1,23 @@
+name: Validate registry
+
+on:
+  push:
+    paths:
+      - "app/registry.json"
+      - "app/scripts/**"
+      - ".github/workflows/validate.yml"
+  pull_request:
+    paths:
+      - "app/registry.json"
+      - "app/scripts/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate app/registry.json
+        run: node app/scripts/validate-registry.mjs
