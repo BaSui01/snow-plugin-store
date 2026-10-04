@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04",
+  "generated": true,
   "plugins": [
     {
       "kind": "script",
@@ -21,7 +21,11 @@
       "tag": "v1.0.0",
       "asset": "copy-last-ai-message.user.js",
       "sha256": "f9e06cdbda18bdaa19bd1ab6e4ee422d3e34d5091597afdccd72b085fe052fdc",
-      "tags": ["client-script", "clipboard", "message"],
+      "tags": [
+        "client-script",
+        "clipboard",
+        "message"
+      ],
       "icon": "lucide:Copy"
     }
   ]

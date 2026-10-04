@@ -10,9 +10,11 @@ SHA-256 校验，校验通过再安装。
 
 | 路径 | 说明 |
 | --- | --- |
-| `app/registry.json` | Snow App 插件索引（客户端读取的唯一文件，上架与更新都改这里） |
-| `app/registry.schema.json` | 索引文件 JSON Schema（编辑器提示 / 对照参考） |
-| `app/scripts/validate-registry.mjs` | 索引校验脚本，本地与 CI 使用：`node app/scripts/validate-registry.mjs` |
+| `app/plugins/<pluginId>.json` | 插件条目源文件（一插件一文件，上架与更新只改这里；文件名必须等于 `<id>.json`） |
+| `app/registry.json` | 由 CI 聚合生成的索引（客户端读取；请勿手动编辑，合并后自动重建） |
+| `app/entry.schema.json` | 条目 JSON Schema（编辑器提示 / 对照参考） |
+| `app/scripts/validate-registry.mjs` | 条目校验脚本（本地与 CI 使用） |
+| `app/scripts/build-registry.mjs` | 聚合脚本：从 `app/plugins/` 重新生成 `app/registry.json` |
 | `cli/` | 预留：Snow CLI 插件索引（尚未启用，不要在里面放 App 插件） |
 
 ## 上架与更新流程
@@ -38,11 +40,12 @@ Get-FileHash .\my-plugin-1.2.0.zip -Algorithm SHA256
 
 ### 4. 提交索引
 
-编辑 `app/registry.json`，在 `plugins` 数组里新增（或更新）条目，然后提交 PR。
-本地可以先跑校验：
+新增或更新 `app/plugins/<pluginId>.json`（一插件一个文件，文件名必须等于 `<id>.json`），然后提交 PR。
+`app/registry.json` 由 CI 在合并后自动重建，不需要手动修改。本地可以先跑校验与聚合：
 
 ```bash
-node app/scripts/validate-registry.mjs
+node app/scripts/validate-registry.mjs   # 校验全部条目
+node app/scripts/build-registry.mjs      # 本地重新生成 app/registry.json
 ```
 
 ### 5. 合并生效
@@ -115,7 +118,9 @@ This repository is the plugin market index for Snow App. The client (Plugins pag
 reads `app/registry.json`; plugin archives are distributed by each author's own GitHub repository
 via Release assets (zip) and verified against the SHA-256 pinned in the index before installation.
 
-To publish: package your plugin as a zip with `plugin.json` at the zip root, attach it to a GitHub
-Release tag (e.g. `v1.2.0`), compute the SHA-256, add an entry to `app/registry.json`, and open a
-pull request. Run `node app/scripts/validate-registry.mjs` before submitting. Merging only verifies
-the index format and hashes - it is not a security endorsement of the plugin.
+To publish: add an entry file under `app/plugins/` (one file per plugin, named `<id>.json`); for a
+panel plugin, package the folder as a zip with `plugin.json` at the zip root and attach it to a
+GitHub Release tag (e.g. `v1.2.0`); for a script, attach the `.user.js` file. Compute the SHA-256
+and open a pull request - `app/registry.json` is rebuilt automatically by CI after merge. Run
+`node app/scripts/validate-registry.mjs` before submitting. Merging only verifies the index format
+and hashes - it is not a security endorsement of the plugin.

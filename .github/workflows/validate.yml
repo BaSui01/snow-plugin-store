@@ -1,15 +1,19 @@
-name: Validate registry
+name: Registry
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - "app/registry.json"
-      - "app/scripts/**"
+      - "app/**"
       - ".github/workflows/validate.yml"
   pull_request:
     paths:
-      - "app/registry.json"
-      - "app/scripts/**"
+      - "app/**"
+      - ".github/workflows/validate.yml"
+
+permissions:
+  contents: write
 
 jobs:
   validate:
@@ -19,5 +23,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Validate app/registry.json
+      - name: Validate plugin entries
         run: node app/scripts/validate-registry.mjs
+
+  rebuild:
+    if: github.event_name == 'push'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Rebuild registry.json from app/plugins
+        run: node app/scripts/build-registry.mjs
+      - name: Commit generated registry.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/registry.json
+          git diff --cached --quiet && echo "registry.json is up to date" || (git commit -m "chore: rebuild registry.json" && git push)
