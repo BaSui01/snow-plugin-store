@@ -1,0 +1,33 @@
+{
+  "id": "com.github.xqchencn.snow-file-explorer",
+  "kind": "plugin",
+  "name": {
+    "default": "File Explorer",
+    "zh-CN": "文件浏览器",
+    "zh-TW": "檔案瀏覽器"
+  },
+  "description": {
+    "default": "Browse local workspace with file preview, Markdown preview, Git status, terminal and project command running.",
+    "zh-CN": "本地工作区文件浏览器，支持代码与 Markdown 预览、Git 状态、交互式终端和项目命令运行。",
+    "zh-TW": "本機工作區檔案瀏覽器，支援程式碼與 Markdown 預覽、Git 狀態、互動式終端機與專案命令執行。"
+  },
+  "author": "xqchen",
+  "repo": "https://github.com/xqchencn/snow-file-explorer",
+  "homepage": "https://github.com/xqchencn/snow-file-explorer",
+  "version": "1.0.5",
+  "tag": "v1.0.5",
+  "asset": "snow-file-explorer-v1.0.5.zip",
+  "sha256": "ea46b69d7171bb02788bb6a36483be189e42c8b3bad4830635c73d2732887714",
+  "privacy": [
+    "filesystem",
+    "terminal"
+  ],
+  "tags": [
+    "file-explorer",
+    "workspace",
+    "git",
+    "terminal",
+    "run-config"
+  ],
+  "icon": "lucide:FolderTree"
+}
