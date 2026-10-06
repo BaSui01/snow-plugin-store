@@ -17,5 +17,5 @@
   }],
   "styles": ["style.css"],
   "locales": { "en": "locales/en.json", "zh-CN": "locales/zh-CN.json", "zh-TW": "locales/zh-TW.json" },
-  "privacy": { "scopes": ["messages"], "note": "仅在用户点击输入栏优化并确认共享模式后，由宿主读取所选会话最近文本并发送给宿主选定的 API 服务。右侧面板只配置策略。不读取密钥和附件；草稿及结果不持久化；不自动发送消息。" }
+  "privacy": { "scopes": ["messages"], "note": "仅在用户点击输入栏优化时，按已保存配置将草稿及所选会话上下文发送给明确选择的模型服务，可能产生费用，不再弹出确认窗。右侧面板只配置策略与服务模型。不读取密钥和附件；草稿及结果不持久化；不自动发送消息。" }
 }
