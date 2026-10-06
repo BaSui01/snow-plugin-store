@@ -1,0 +1,36 @@
+{
+  "id": "com.snow.session-file-count",
+  "name": {
+    "default": "Session File Count",
+    "zh-CN": "会话文件统计",
+    "zh-TW": "會話檔案統計",
+    "en": "Session File Count"
+  },
+  "description": {
+    "default": "Count recorded files from the focused conversation below replies, without a standalone panel.",
+    "zh-CN": "在回复下方展示当前会话及子代理已采集的文件数量和清单，不提供独立面板。",
+    "zh-TW": "在回覆下方顯示目前會話及子代理已採集的檔案數量和清單，不提供獨立面板。"
+  },
+  "version": "1.1.0",
+  "author": "小青枣 & Snow App contributors",
+  "license": "MIT",
+  "icon": "assets/icon.svg",
+  "renderMode": "esm",
+  "entry": "footer.js",
+  "panels": [],
+  "contributions": {
+    "messageFooters": [
+      { "id": "files", "entry": "footer.js", "exportName": "mountFooter" }
+    ]
+  },
+  "styles": ["footer.css"],
+  "locales": {
+    "zh-CN": "locales/zh-CN.json",
+    "zh-TW": "locales/zh-TW.json",
+    "en": "locales/en.json"
+  },
+  "privacy": {
+    "scopes": [],
+    "note": "仅订阅公开 runtime 域当前会话的文件统计与覆盖状态。不读取聊天正文，不执行命令，不访问网络，不修改项目文件，不持久化路径或差异。"
+  }
+}
