@@ -1,0 +1,21 @@
+{
+  "id": "com.snow.prompt-optimizer",
+  "name": { "default": "Prompt Optimizer", "en": "Prompt Optimizer", "zh-CN": "提示词优化", "zh-TW": "提示詞優化" },
+  "description": { "default": "Configure rewriting instructions and strategies; optimize from the input toolbar, auto-fill safely and undo. Never auto-send.", "zh-CN": "面板配置优化提示词与策略，输入栏一键优化、安全自动回填和还原，绝不自动发送。", "zh-TW": "面板設定優化提示詞與策略，輸入欄一鍵優化、安全自動回填與還原，絕不自動傳送。" },
+  "version": "1.1.0",
+  "license": "MIT",
+  "icon": "assets/icon.svg",
+  "renderMode": "esm",
+  "entry": "index.js",
+  "panels": [{
+    "id": "optimizer",
+    "title": { "default": "Optimizer settings", "en": "Optimizer settings", "zh-CN": "优化提示词配置", "zh-TW": "優化提示詞設定" },
+    "icon": "lucide:WandSparkles",
+    "chatInput": true,
+    "chatInputAction": "optimizeDraft",
+    "chatInputTitle": { "default": "Optimize prompt", "en": "Optimize prompt", "zh-CN": "优化提示词", "zh-TW": "優化提示詞" }
+  }],
+  "styles": ["style.css"],
+  "locales": { "en": "locales/en.json", "zh-CN": "locales/zh-CN.json", "zh-TW": "locales/zh-TW.json" },
+  "privacy": { "scopes": ["messages"], "note": "仅在用户点击输入栏优化时，按已保存配置将草稿及所选会话上下文发送给明确选择的模型服务，可能产生费用，不再弹出确认窗。右侧面板只配置策略与服务模型。不读取密钥和附件；草稿及结果不持久化；不自动发送消息。" }
+}
