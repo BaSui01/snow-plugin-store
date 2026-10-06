@@ -13,7 +13,6 @@ export function mount(container, api) {
   const refresh = element("button", "sfc-button", t("refresh"));
   refresh.type = "button";
   heading.append(refresh);
-  const note = element("p", "sfc-note", t("scope"));
   const toolbar = element("div", "sfc-toolbar");
   const search = element("input", "sfc-search");
   search.type = "search";
@@ -31,7 +30,7 @@ export function mount(container, api) {
   const status = element("p", "sfc-status");
   status.setAttribute("role", "status");
   status.setAttribute("aria-live", "polite");
-  root.append(heading, note, toolbar, status, content);
+  root.append(heading, toolbar, status, content);
   container.append(root);
   let snapshot = null;
   let disposed = false;
@@ -59,7 +58,7 @@ export function mount(container, api) {
       typeof conversation.title === "string" && conversation.title
         ? conversation.title
         : t("untitled");
-    info.append(element("h3", "", title), element("code", "sfc-id", id));
+    info.append(element("h3", "", title));
     const phase = conversation.isAborting
       ? "aborting"
       : conversation.isPaused
@@ -70,7 +69,9 @@ export function mount(container, api) {
               conversation.completedConversationIds.includes(id)
             ? "finished"
             : "idle";
-    info.append(element("span", "sfc-badge", t(phase)));
+    const badge = element("span", "sfc-badge", t(phase));
+    badge.dataset.phase = phase;
+    info.append(badge);
     content.append(info);
     const enhanced = conversation.fileChangeTrackingVersion === 1;
     const records = recordsFor(conversation.fileChangeStats, id);
@@ -124,14 +125,13 @@ export function mount(container, api) {
       ).length;
       if (source !== "legacy" || count > 0) countCard(source, count);
     }
-    content.append(summary, element("p", "sfc-note", t("overlap")));
+    content.append(summary);
     if (!enhanced) content.append(element("p", "sfc-warning", t("upgrade")));
     if (api.ui?.messageFooterVersion !== 1)
       content.append(element("p", "sfc-warning", t("footerUpgrade")));
     const coverage = enhanced
       ? recordsFor(conversation.fileChangeCoverage, id)
       : null;
-    content.append(element("p", "sfc-warning", t("boundary")));
     if (enhanced && coverage === null)
       content.append(element("p", "sfc-warning", t("coverageMissing")));
     if (coverage?.length) {
@@ -218,18 +218,31 @@ export function mount(container, api) {
     // Keep large histories responsive; the complete count above is not truncated.
     for (const group of visible.slice(0, 500)) {
       const row = element("li", "sfc-file");
-      row.append(element("code", "sfc-path", group.latest.filePath));
-      const metadata = [...group.sources].map((source) => t(source));
-      metadata.push(...[...group.agents].map((agent) => t(agent)));
-      if (["create", "edit", "delete"].includes(group.latest.kind))
-        metadata.push(t(group.latest.kind));
-      if (typeof group.latest.root === "string")
-        metadata.push(group.latest.root);
-      if (Number.isFinite(group.latest.timestamp) && group.latest.timestamp > 0)
-        metadata.push(
+      const filePath = group.latest.filePath;
+      const filename = filePath.split(/[\\/]/).filter(Boolean).pop() || filePath;
+      row.append(
+        element("strong", "sfc-filename", filename),
+        element("code", "sfc-path", filePath),
+      );
+      const metadata = element("div", "sfc-meta");
+      for (const source of group.sources)
+        metadata.append(element("span", "sfc-tag", t(source)));
+      for (const agent of group.agents)
+        metadata.append(element("span", "sfc-tag", t(agent)));
+      if (["create", "edit", "delete"].includes(group.latest.kind)) {
+        const kind = element("span", "sfc-tag", t(group.latest.kind));
+        kind.dataset.kind = group.latest.kind;
+        metadata.append(kind);
+      }
+      if (Number.isFinite(group.latest.timestamp) && group.latest.timestamp > 0) {
+        const time = element(
+          "time",
+          "sfc-time",
           new Date(group.latest.timestamp).toLocaleString(api.locale),
         );
-      row.append(element("span", "sfc-meta", metadata.join(" · ")));
+        metadata.append(time);
+      }
+      row.append(metadata);
       list.append(row);
     }
     content.append(list);

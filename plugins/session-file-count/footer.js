@@ -73,7 +73,6 @@ export function mountFooter(container, api, context, signal) {
   };
   const render = () => {
     if (!active()) return;
-    const coverageOpen = root.querySelector("details")?.open ?? false;
     root.replaceChildren();
     const conversation = runtime?.conversation;
     if (
@@ -178,11 +177,13 @@ export function mountFooter(container, api, context, signal) {
       list.append(row);
     }
     root.append(list);
-    if (files.length) {
+    if (files.length > 4) {
       const toggle = element("button", "sfc-inline-toggle");
       toggle.type = "button";
       toggle.setAttribute("aria-expanded", String(expanded));
       toggle.setAttribute("aria-controls", list.id);
+      const chevron = element("span", "sfc-inline-chevron");
+      chevron.setAttribute("aria-hidden", "true");
       toggle.append(
         element(
           "span",
@@ -191,7 +192,7 @@ export function mountFooter(container, api, context, signal) {
             count: files.length,
           }),
         ),
-        element("span", "sfc-inline-chevron", expanded ? "⌃" : "⌄"),
+        chevron,
       );
       toggle.addEventListener("click", () => {
         if (!active()) return;
@@ -205,71 +206,6 @@ export function mountFooter(container, api, context, signal) {
     }
     if (coverage === null)
       root.append(element("p", "sfc-inline-note", t("coverageMissing")));
-    if (coverage?.length) {
-      const details = element("details", "sfc-inline-coverage");
-      details.open = coverageOpen;
-      const limited = coverage.some((item) => item?.coverage !== "scoped");
-      details.append(
-        element("summary", "", t(limited ? "footer.partial" : "footer.scoped")),
-        element("p", "sfc-inline-note", t("boundary")),
-      );
-      const groups = new Map();
-      for (const item of coverage) {
-        if (
-          !item ||
-          !["filesystem", "terminal"].includes(item.source) ||
-          !["scoped", "partial", "unavailable"].includes(item.coverage)
-        )
-          continue;
-        const reasons = Array.isArray(item.reasons)
-          ? item.reasons.filter((reason) => typeof reason === "string")
-          : [];
-        const key = JSON.stringify([
-          item.source,
-          item.coverage,
-          item.root,
-          reasons,
-          item.agent,
-          item.subAgentName,
-        ]);
-        const group = groups.get(key);
-        if (group) group.count += 1;
-        else groups.set(key, { ...item, reasons, count: 1 });
-      }
-      for (const item of groups.values()) {
-        const row = element("div", "sfc-inline-coverage-row");
-        const level =
-          item.coverage === "unavailable"
-            ? t("footer.unavailable")
-            : t(item.coverage);
-        row.append(
-          element("strong", "", `${t(item.source)} · ${level} × ${item.count}`),
-        );
-        if (typeof item.root === "string")
-          row.append(element("code", "", item.root));
-        if (item.agent === "sub")
-          row.append(
-            element(
-              "span",
-              "",
-              `${t("sub")}${item.subAgentName ? ` · ${item.subAgentName}` : ""}`,
-            ),
-          );
-        row.append(
-          element(
-            "span",
-            "",
-            item.reasons
-              .map((reason) =>
-                api.t(`reason.${reason}`, { defaultValue: reason }),
-              )
-              .join(" · "),
-          ),
-        );
-        details.append(row);
-      }
-      root.append(details);
-    }
     if (files.some((file) => !file.fileKey || !file.source))
       root.append(element("p", "sfc-inline-note", t("footer.legacy")));
   };
