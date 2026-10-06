@@ -45,6 +45,8 @@ jobs:
           # main may receive new commits (e.g. a merged PR) between checkout and push;
           # sync first, then rebuild, and retry on the latest main if the push is rejected.
           for attempt in 1 2 3 4 5; do
+            # discard build output from the previous steps: pull --rebase needs a clean worktree
+            git reset --hard HEAD
             git pull --rebase origin main
 
             node app/scripts/build-registry.mjs
