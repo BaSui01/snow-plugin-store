@@ -18,10 +18,10 @@
       "author": "xqchen",
       "repo": "https://github.com/xqchencn/snow-file-explorer",
       "homepage": "https://github.com/xqchencn/snow-file-explorer",
-      "version": "1.0.7",
-      "tag": "v1.0.7",
-      "asset": "snow-file-explorer-v1.0.7.zip",
-      "sha256": "64119b76ab4b9bf2028cf9417e5bc3679da7f1ad37432a167a3163d74672fcb5",
+      "version": "1.1.0",
+      "tag": "v1.1.0",
+      "asset": "snow-file-explorer-v1.1.0.zip",
+      "sha256": "8577447242ea628b4ae0d78ec0f8c4c1f73294e9a874ea8f878e93a71bb7e1d2",
       "privacy": [
         "filesystem",
         "terminal"
