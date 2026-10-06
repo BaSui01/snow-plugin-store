@@ -1,0 +1,33 @@
+.snow-po-settings {
+  --po-accent: var(--accent-color, #0f766e);
+  color: var(--text-primary, inherit);
+  font: inherit;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+.snow-po-settings * { box-sizing: border-box; }
+.snow-po-settings h2 { margin: 0; font-size: 18px; }
+.snow-po-settings p { margin: 4px 0 0; line-height: 1.6; }
+.snow-po-settings .po-muted { color: var(--text-secondary, #888); font-size: 12px; }
+.snow-po-settings .po-card { border: 1px solid var(--border-color, #8885); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.snow-po-settings label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.snow-po-settings .po-check { flex-direction: row; align-items: flex-start; gap: 9px; line-height: 1.5; }
+.snow-po-settings input[type="checkbox"] { accent-color: var(--po-accent); margin-top: 3px; }
+.snow-po-settings :is(input[type="text"], input[type="number"], textarea, select) {
+  font: inherit; color: inherit; background: var(--bg-secondary, transparent); border: 1px solid var(--border-color, #8885); border-radius: 8px; padding: 9px; width: 100%;
+}
+.snow-po-settings select option { color: var(--text-primary, #222); background: var(--bg-secondary, #fff); }
+.snow-po-settings textarea { min-height: 180px; resize: vertical; line-height: 1.6; }
+.snow-po-settings .po-preview { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 260px; overflow: auto; margin: 8px 0; font: inherit; line-height: 1.6; }
+.snow-po-settings .po-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.snow-po-settings button { font: inherit; border: 1px solid var(--border-color, #8885); background: var(--bg-secondary, transparent); color: inherit; border-radius: 8px; padding: 9px 12px; cursor: pointer; }
+.snow-po-settings button.po-primary { background: var(--po-accent); color: #fff; border-color: transparent; }
+.snow-po-settings :is(button, input, select, textarea):disabled { opacity: .45; cursor: not-allowed; }
+.snow-po-settings :is(button, input, select, textarea):focus-visible { outline: 2px solid var(--po-accent); outline-offset: 2px; }
+.snow-po-settings .po-status { font-size: 13px; padding: 10px 12px; border-radius: 8px; background: var(--bg-tertiary, #8881); line-height: 1.6; }
+.snow-po-settings .po-warning { border-left: 3px solid #d97706; }
