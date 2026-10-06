@@ -1,0 +1,17 @@
+{
+  "id": "com.snow.session-file-count",
+  "kind": "plugin",
+  "name": { "default": "Session File Count", "zh-CN": "会话文件统计", "zh-TW": "會話檔案統計" },
+  "description": { "default": "Show recorded conversation files below the latest completed reply, including sub-agents. Requires the new host footer and tracking APIs.", "zh-CN": "在最新已结束回复下方展示当前会话及子代理已记录文件数量与清单，不提供独立面板。需要新版宿主回复插槽与追踪接口。", "zh-TW": "在最新已結束回覆下方顯示目前會話及子代理已記錄檔案數量與清單，不提供獨立面板。需要新版宿主回覆插槽與追蹤介面。" },
+  "author": "小青枣 & Snow App contributors",
+  "repo": "https://github.com/BaSui01/snow-plugins",
+  "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/session-file-count",
+  "version": "1.1.0",
+  "tag": "v1.1.0-preview.1",
+  "asset": "session-file-count-1.1.0.zip",
+  "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/v1.1.0-preview.1/session-file-count-1.1.0.zip",
+  "sha256": "23ca5b0c12d96a8d913704160e2590b0035955f461cb559624dcbeb7a38d00c0",
+  "privacy": [],
+  "tags": ["会话", "文件统计", "回复"],
+  "icon": "lucide:Files"
+}
