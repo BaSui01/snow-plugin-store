@@ -8,8 +8,8 @@
   },
   "description": {
     "default": "Show recorded conversation files below the latest completed reply, including sub-agents. Requires the new host footer and tracking APIs.",
-    "zh-CN": "在最新已结束回复下方展示当前会话及子代理已记录文件数量与清单，不提供独立面板。需要新版宿主回复插槽与追踪接口。",
-    "zh-TW": "在最新已結束回覆下方顯示目前會話及子代理已記錄檔案數量與清單，不提供獨立面板。需要新版宿主回覆插槽與追蹤介面。"
+    "zh-CN": "在最新已结束回复下方展示当前会话及子代理已记录文件数量与清单。需要新版宿主回复插槽与追踪接口。",
+    "zh-TW": "在最新已結束回覆下方顯示目前會話及子代理已記錄檔案數量與清單。需要新版宿主回覆插槽與追蹤介面。"
   },
   "author": "小青枣 & Snow App contributors",
   "repo": "https://github.com/BaSui01/snow-plugins",
