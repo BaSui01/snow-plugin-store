@@ -82,18 +82,19 @@
       "author": "小青枣 & Snow App contributors",
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/session-file-count",
-      "version": "1.1.0",
-      "tag": "v1.1.0-preview.1",
-      "asset": "session-file-count-1.1.0.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/v1.1.0-preview.1/session-file-count-1.1.0.zip",
-      "sha256": "23ca5b0c12d96a8d913704160e2590b0035955f461cb559624dcbeb7a38d00c0",
+      "version": "1.1.1",
+      "tag": "session-file-count/v1.1.1",
+      "asset": "session-file-count-1.1.1.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/session-file-count%2Fv1.1.1/session-file-count-1.1.1.zip",
+      "sha256": "d71d13f0ee5e60f8681a3ac5547362b3cd3ae84d1f7c427f4157a2790890d2f6",
       "privacy": [],
       "tags": [
         "会话",
         "文件统计",
         "回复"
       ],
-      "icon": "lucide:Files"
+      "icon": "lucide:Files",
+      "minAppVersion": "0.4.16"
     },
     {
       "kind": "script",
