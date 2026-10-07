@@ -8,17 +8,17 @@
   },
   "description": {
     "default": "Show recorded conversation files below the latest completed reply, including sub-agents. Requires the new host footer and tracking APIs.",
-    "zh-CN": "在最新已结束回复下方展示当前会话及子代理已记录文件数量与清单，不提供独立面板。需要新版宿主回复插槽与追踪接口。",
-    "zh-TW": "在最新已結束回覆下方顯示目前會話及子代理已記錄檔案數量與清單，不提供獨立面板。需要新版宿主回覆插槽與追蹤介面。"
+    "zh-CN": "在最新已结束回复下方展示当前会话及子代理已记录文件数量与清单。需要新版宿主回复插槽与追踪接口。",
+    "zh-TW": "在最新已結束回覆下方顯示目前會話及子代理已記錄檔案數量與清單。需要新版宿主回覆插槽與追蹤介面。"
   },
   "author": "小青枣 & Snow App contributors",
   "repo": "https://github.com/BaSui01/snow-plugins",
   "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/session-file-count",
-  "version": "1.1.1",
-  "tag": "session-file-count/v1.1.1",
-  "asset": "session-file-count-1.1.1.zip",
-  "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/session-file-count%2Fv1.1.1/session-file-count-1.1.1.zip",
-  "sha256": "d71d13f0ee5e60f8681a3ac5547362b3cd3ae84d1f7c427f4157a2790890d2f6",
+  "version": "1.1.2",
+  "tag": "session-file-count/v1.1.2",
+  "asset": "session-file-count-1.1.2.zip",
+  "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/session-file-count%2Fv1.1.2/session-file-count-1.1.2.zip",
+  "sha256": "fe6bf205daa93f43b8bf588e440cce93987b0b85b82a73539fd8588064a213f9",
   "privacy": [],
   "tags": [
     "会话",
