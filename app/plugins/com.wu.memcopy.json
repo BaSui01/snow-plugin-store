@@ -1,0 +1,22 @@
+{
+  "id": "com.wu.memcopy",
+  "kind": "plugin",
+  "name": {
+    "default": "Project Data Copier",
+    "zh-CN": "项目数据复制"
+  },
+  "description": {
+    "default": "Copy project memories and memos between projects (local or SSH) without touching the source. Per-item selection, duplicate detection, two-step confirmation and one-click undo.",
+    "zh-CN": "在项目之间复制项目记忆与备忘录（本机或 SSH 均可），源项目全程只读。支持逐条勾选、自动去重、两步确认与一键撤销。"
+  },
+  "author": "Wu",
+  "repo": "https://github.com/LNemo05/snow-project-data-copy",
+  "homepage": "https://github.com/LNemo05/snow-project-data-copy",
+  "version": "1.2.0",
+  "tag": "v1.2.0",
+  "asset": "com.wu.memcopy-1.2.0.zip",
+  "sha256": "bb4e207b36db1703f602ffef07ccdf8426c54ea9241a9cda26a238ae0db9ce69",
+  "privacy": ["memory", "memos"],
+  "tags": ["memory", "memo", "migration", "copy", "ssh", "记忆", "备忘录", "迁移"],
+  "icon": "lucide:Copy"
+}
