@@ -51,11 +51,11 @@
       "author": "BaSui01",
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/prompt-optimizer",
-      "version": "1.1.0",
-      "tag": "v1.1.0-preview.1",
-      "asset": "prompt-optimizer-1.1.0.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/v1.1.0-preview.1/prompt-optimizer-1.1.0.zip",
-      "sha256": "feaffabff1e50675dcb71a24aa9b8e22ecf7c743a9c528bb652fc090ae73b3f2",
+      "version": "1.1.2",
+      "tag": "prompt-optimizer/v1.1.2",
+      "asset": "prompt-optimizer-1.1.2.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/prompt-optimizer%2Fv1.1.2/prompt-optimizer-1.1.2.zip",
+      "sha256": "b74d1a9be957be473f3dd8e9903be291fe64f63f5f41fb3ac4d9e15a4b89d014",
       "privacy": [
         "messages"
       ],
@@ -95,6 +95,40 @@
       ],
       "icon": "lucide:Files",
       "minAppVersion": "0.4.16"
+    },
+    {
+      "id": "com.wu.memcopy",
+      "kind": "plugin",
+      "name": {
+        "default": "Project Data Copier",
+        "zh-CN": "项目数据复制"
+      },
+      "description": {
+        "default": "Copy project memories and memos between projects (local or SSH) without touching the source. Per-item selection, duplicate detection, two-step confirmation and one-click undo.",
+        "zh-CN": "在项目之间复制项目记忆与备忘录（本机或 SSH 均可），源项目全程只读。支持逐条勾选、自动去重、两步确认与一键撤销。"
+      },
+      "author": "Wu",
+      "repo": "https://github.com/LNemo05/snow-project-data-copy",
+      "homepage": "https://github.com/LNemo05/snow-project-data-copy",
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "asset": "com.wu.memcopy-1.2.0.zip",
+      "sha256": "bb4e207b36db1703f602ffef07ccdf8426c54ea9241a9cda26a238ae0db9ce69",
+      "privacy": [
+        "memory",
+        "memos"
+      ],
+      "tags": [
+        "memory",
+        "memo",
+        "migration",
+        "copy",
+        "ssh",
+        "记忆",
+        "备忘录",
+        "迁移"
+      ],
+      "icon": "lucide:Copy"
     },
     {
       "kind": "script",
