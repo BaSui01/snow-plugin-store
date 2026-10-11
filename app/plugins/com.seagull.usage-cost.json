@@ -1,0 +1,21 @@
+{
+  "id": "com.seagull.usage-cost",
+  "kind": "plugin",
+  "name": {
+    "default": "Usage Cost",
+    "zh-CN": "成本核算看板"
+  },
+  "description": {
+    "default": "Estimate API usage cost from usage statistics with built-in / OpenRouter-synced per-model prices, daily cost chart and CSV export.",
+    "zh-CN": "读取使用量统计，按内置官方刊例/OpenRouter 换算单价估算各模型 API 使用成本，支持每日成本条形图与 CSV 导出，可一键从 OpenRouter 同步价格。"
+  },
+  "repo": "https://github.com/xb0or/snow-plugins",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "asset": "com.seagull.usage-cost-1.0.0.zip",
+  "sha256": "83a62263ac45804cfcf6f7d5d9c4519f9de12d1671d5b88b98b46689c9185fc9",
+  "author": "kedou",
+  "privacy": ["usage"],
+  "tags": ["usage", "cost", "dashboard", "openrouter"],
+  "icon": "lucide:CircleDollarSign"
+}
