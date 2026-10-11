@@ -1,0 +1,21 @@
+{
+  "id": "com.seagull.tps-metrics",
+  "kind": "plugin",
+  "name": {
+    "default": "Mission Control",
+    "zh-CN": "任务中心"
+  },
+  "description": {
+    "default": "Industry-convention TPS/TTFT metrics plus a live overview of all running sessions (including sub-agents).",
+    "zh-CN": "按行业口径计算 TPS/TTFT，并汇总全部运行中会话（含子代理）的实时状态。"
+  },
+  "repo": "https://github.com/xb0or/snow-plugins",
+  "version": "0.2.0",
+  "tag": "v0.2.0",
+  "asset": "com.seagull.tps-metrics-0.2.0.zip",
+  "sha256": "d6c44036f17773741f2536e644c0be0ea17288ea787fa2110136db06e287d57e",
+  "author": "kedou",
+  "privacy": ["conversations"],
+  "tags": ["metrics", "monitor", "tps", "ttft"],
+  "icon": "lucide:Activity"
+}
