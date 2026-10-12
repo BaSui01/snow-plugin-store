@@ -49,10 +49,10 @@
         "zh-CN": "聚合公开技能索引（官方技能 / 本地技能 / 社区源 / skills.sh），支持搜索、分类折叠过滤、分页浏览、全局或项目级一键安装或让 AI 代装；skills.sh 卡片描述自动从详情页补齐。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.1.0",
-      "tag": "v1.1.0",
-      "asset": "com.seagull.skill-store-1.1.0.zip",
-      "sha256": "06f39e8b7d834e9007017cef38663bd368997baae0d392689cf654e1721d69b9",
+      "version": "1.2.0",
+      "tag": "v1.2.0",
+      "asset": "com.seagull.skill-store-1.2.0.zip",
+      "sha256": "944c0a4dd970fead084df720abd1bc072db78dc9464bf4b85bb5f50d30a564e0",
       "author": "kedou",
       "tags": [
         "skills",
