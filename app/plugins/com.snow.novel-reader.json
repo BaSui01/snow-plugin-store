@@ -1,0 +1,25 @@
+{
+  "id": "com.snow.novel-reader",
+  "kind": "plugin",
+  "name": {
+    "default": "Novel Reader",
+    "zh-CN": "小说阅读器",
+    "zh-TW": "小說閱讀器"
+  },
+  "description": {
+    "default": "Floating TXT novel reader with adjustable opacity and position, wheel and hotkey paging, auto hide on mouse leave, chapter detection and auto scroll.",
+    "zh-CN": "悬浮 TXT 小说阅读器：可调透明度与显示位置，支持滚轮与快捷键翻页、鼠标移入显示移出隐藏，并带章节识别与自动滚动。",
+    "zh-TW": "懸浮 TXT 小說閱讀器：可調不透明度與顯示位置，支援滾輪與快捷鍵翻頁，滑鼠移入顯示移出隱藏，並具備章節識別與自動捲動。"
+  },
+  "author": "azhu949",
+  "repo": "https://github.com/azhu949/snow-plugins",
+  "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-novel-reader",
+  "version": "1.0.0",
+  "tag": "novel-reader/v1.0.0",
+  "asset": "com.snow.novel-reader-1.0.0.zip",
+  "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.0.0/com.snow.novel-reader-1.0.0.zip",
+  "sha256": "f71490a8f0d14a108ccc1f40221c62e2beb49a0cea5b69303a37958c366c91ac",
+  "privacy": [],
+  "tags": ["novel", "reader", "txt", "floating", "小说", "阅读器"],
+  "icon": "lucide:BookOpen"
+}
