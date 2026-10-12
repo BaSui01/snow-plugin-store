@@ -103,10 +103,10 @@
         "zh-CN": "读取使用量统计，按内置官方刊例/OpenRouter 换算单价估算各模型 API 使用成本，支持每日成本条形图与 CSV 导出，可一键从 OpenRouter 同步价格。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.1.0",
-      "tag": "usage-cost/v1.1.0",
-      "asset": "com.seagull.usage-cost-1.1.0.zip",
-      "sha256": "3db896f65b48ea4f26d8cff759f953f86315c289f11a9485c71de78aa50a8855",
+      "version": "1.2.0",
+      "tag": "usage-cost/v1.2.0",
+      "asset": "com.seagull.usage-cost-1.2.0.zip",
+      "sha256": "4bf9143647e04d594059dc13ee8b5d2a808fffa95c3b53eb414e1840bb1026d7",
       "author": "kedou",
       "privacy": [
         "usage"
