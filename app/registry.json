@@ -71,14 +71,14 @@
         "zh-CN": "本地语音服务"
       },
       "description": {
-        "default": "Start / stop / restart the local whisper.cpp transcription service and manage its models (multi-backend CUDA / Vulkan / CPU). Must be used together with the snow-voice-io client script: this panel only runs the service and provides no voice input by itself.",
-        "zh-CN": "启动 / 停止 / 重启本地 whisper.cpp 转写服务并管理识别模型，支持 CUDA / Vulkan / CPU 多后端自动择优。需与 snow-voice-io 客户端脚本配合使用：本面板只负责起服务，本身不提供语音输入。"
+        "default": "Start / stop / restart the local whisper.cpp transcription service and manage its models (multi-backend CUDA / Vulkan / CPU). Must be used together with the \"Local Speech Service\" client script: this panel only runs the service and provides no voice input by itself.",
+        "zh-CN": "启动 / 停止 / 重启本地 whisper.cpp 转写服务并管理识别模型，支持 CUDA / Vulkan / CPU 多后端自动择优。需与「本地语音服务」客户端脚本配合使用：本面板只负责起服务，本身不提供语音输入。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.4.0",
-      "tag": "stt-launcher/v1.4.0",
-      "asset": "com.seagull.stt-launcher-1.4.0.zip",
-      "sha256": "6f67c9a5a8c14a8a43f26580b78c60740f3a1e5be7989a369b4d84b246d6a39a",
+      "version": "1.4.3",
+      "tag": "stt-launcher/v1.4.3",
+      "asset": "com.seagull.stt-launcher-1.4.3.zip",
+      "sha256": "f560605a7464ec0a02cd9d0af558406610efaea64c6180cf062a007ff8c6d537",
       "author": "kedou",
       "privacy": [
         "terminal"
@@ -149,6 +149,33 @@
         "openrouter"
       ],
       "icon": "lucide:CircleDollarSign"
+    },
+    {
+      "id": "com.snow.external-tool-renderer",
+      "kind": "plugin",
+      "name": {
+        "default": "Tool Gallery",
+        "zh-CN": "工具画廊",
+        "zh-TW": "工具畫廊",
+        "en": "Tool Gallery"
+      },
+      "description": {
+        "default": "Unified cards for external MCP tool calls: argument summaries, tables, content blocks and error states, covering 24 search and developer services such as Anysearch, DBX, Firecrawl and Chrome DevTools. Requires a compatible desktop host.",
+        "zh-CN": "为外部 MCP 工具调用提供统一卡片：参数摘要、表格、内容块与错误状态，覆盖 Anysearch、DBX、Firecrawl、Chrome DevTools 等 24 类搜索与开发服务。需配套支持工具卡插槽的桌面宿主。",
+        "zh-TW": "為外部 MCP 工具呼叫提供統一卡片：參數摘要、表格、內容區塊與錯誤狀態，覆蓋 Anysearch、DBX、Firecrawl、Chrome DevTools 等 24 類搜尋與開發服務。需配套支援工具卡插槽的桌面宿主。",
+        "en": "Unified cards for external MCP tool calls: argument summaries, tables, content blocks and error states, covering 24 search and developer services such as Anysearch, DBX, Firecrawl and Chrome DevTools. Requires a compatible desktop host."
+      },
+      "repo": "https://github.com/BaSui01/snow-plugins",
+      "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/external-tool-renderer",
+      "author": "BaSui",
+      "version": "0.2.1",
+      "tag": "external-tool-renderer/v0.2.1",
+      "asset": "external-tool-renderer-0.2.1.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/external-tool-renderer%2Fv0.2.1/external-tool-renderer-0.2.1.zip",
+      "sha256": "279218884e446e617d4c97742e4adbe932108096e1ea62eb7356bac0c3f1cb01",
+      "privacy": [
+        "messages"
+      ]
     },
     {
       "id": "com.snow.novel-reader",
@@ -344,19 +371,19 @@
       "kind": "script",
       "id": "snow.voice-io",
       "name": {
-        "default": "Voice Input & Read Aloud",
-        "zh-CN": "语音输入与朗读"
+        "default": "Local Speech Service",
+        "zh-CN": "本地语音服务"
       },
       "description": {
-        "default": "Client script: record voice input transcribed by a local Whisper service and read AI replies aloud with the system TTS. Must be used together with the snow-stt-launcher panel plugin, which starts/stops the local service and manages models.",
-        "zh-CN": "客户端脚本：语音输入（本机 Whisper 转写）+ AI 回复朗读（系统 TTS）。需与 snow-stt-launcher 面板插件配合使用：由面板一键启停本地转写服务、管理识别模型，本脚本本身不含模型。"
+        "default": "Client script: record voice input transcribed by a local Whisper service and read AI replies aloud with the system TTS. Must be used together with the \"Local Speech Service\" panel plugin, which starts/stops the local service and manages models.",
+        "zh-CN": "客户端脚本：语音输入（本机 Whisper 转写）+ AI 回复朗读（系统 TTS）。需与「本地语音服务」面板插件配合使用：由面板一键启停本地转写服务、管理识别模型，本脚本本身不含模型。"
       },
       "author": "kedou",
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.4.0",
-      "tag": "voice-io/v1.4.0",
+      "version": "1.4.3",
+      "tag": "voice-io/v1.4.3",
       "asset": "snow-voice-io.user.js",
-      "sha256": "b0f2b3dc07a7891569aa7d4f148b524e50fd1b2472db4e2263a9ab2d834c9980",
+      "sha256": "e20e456ba06f6109e575195cb167ade44a64c2f1d670a76153569697ddd989c9",
       "privacy": [],
       "tags": [
         "client-script",
