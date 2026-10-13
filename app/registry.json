@@ -103,10 +103,10 @@
         "zh-CN": "读取使用量统计，按内置官方刊例/OpenRouter 换算单价估算各模型 API 使用成本，支持每日成本条形图与 CSV 导出，可一键从 OpenRouter 同步价格。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.2.1",
-      "tag": "usage-cost/v1.2.1",
-      "asset": "com.seagull.usage-cost-1.2.1.zip",
-      "sha256": "de2a1285ae16a78521ab664ba43629533abe6aadb1b03eb365e2b6074027234d",
+      "version": "1.2.2",
+      "tag": "usage-cost/v1.2.2",
+      "asset": "com.seagull.usage-cost-1.2.2.zip",
+      "sha256": "d39d8c35bbb09cdb38795e4f8dd9a7563659981fd2cfa676d70da3330c89e32c",
       "author": "kedou",
       "privacy": [
         "usage"
@@ -167,11 +167,11 @@
       "author": "BaSui01",
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/prompt-optimizer",
-      "version": "1.4.0",
-      "tag": "prompt-optimizer/v1.4.0",
-      "asset": "prompt-optimizer-1.4.0.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/prompt-optimizer%2Fv1.4.0/prompt-optimizer-1.4.0.zip",
-      "sha256": "37e5533d85d62b3a99061dcd379a7ddbfc9a129ad645798bd1634c6c63c1038a",
+      "version": "1.4.1",
+      "tag": "prompt-optimizer/v1.4.1",
+      "asset": "prompt-optimizer-1.4.1.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/prompt-optimizer%2Fv1.4.1/prompt-optimizer-1.4.1.zip",
+      "sha256": "e203c15d8fdde2bf4e9bed0bb073b8276b2da00c4a4a4adcbe763eb0f486902a",
       "privacy": [
         "messages",
         "projectContext"
@@ -199,11 +199,11 @@
       "author": "小青枣 & Snow App contributors",
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/session-file-count",
-      "version": "1.1.6",
-      "tag": "session-file-count/v1.1.6",
-      "asset": "session-file-count-1.1.6.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/session-file-count%2Fv1.1.6/session-file-count-1.1.6.zip",
-      "sha256": "723c858a3fca9da346567ca489b750567dd54f1be2a90a7f20ae304dbcba1c67",
+      "version": "1.1.7",
+      "tag": "session-file-count/v1.1.7",
+      "asset": "session-file-count-1.1.7.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/session-file-count%2Fv1.1.7/session-file-count-1.1.7.zip",
+      "sha256": "50d5ebd9a86523950fa868d55f02b53b6f3b4217778115be2ea72fb6604ab641",
       "privacy": [],
       "tags": [
         "会话",
