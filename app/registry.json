@@ -103,10 +103,10 @@
         "zh-CN": "读取使用量统计，按内置官方刊例/OpenRouter 换算单价估算各模型 API 使用成本，支持每日成本条形图与 CSV 导出，可一键从 OpenRouter 同步价格。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.2.0",
-      "tag": "usage-cost/v1.2.0",
-      "asset": "com.seagull.usage-cost-1.2.0.zip",
-      "sha256": "4bf9143647e04d594059dc13ee8b5d2a808fffa95c3b53eb414e1840bb1026d7",
+      "version": "1.2.1",
+      "tag": "usage-cost/v1.2.1",
+      "asset": "com.seagull.usage-cost-1.2.1.zip",
+      "sha256": "de2a1285ae16a78521ab664ba43629533abe6aadb1b03eb365e2b6074027234d",
       "author": "kedou",
       "privacy": [
         "usage"
@@ -167,13 +167,14 @@
       "author": "BaSui01",
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/prompt-optimizer",
-      "version": "1.3.0",
-      "tag": "prompt-optimizer/v1.3.0",
-      "asset": "prompt-optimizer-1.3.0.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/prompt-optimizer%2Fv1.3.0/prompt-optimizer-1.3.0.zip",
-      "sha256": "04c68703f724a61fc90cb9c3f8bb2369973c6a9e5a3382d9d8b7dc26a5c65bc6",
+      "version": "1.4.0",
+      "tag": "prompt-optimizer/v1.4.0",
+      "asset": "prompt-optimizer-1.4.0.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/prompt-optimizer%2Fv1.4.0/prompt-optimizer-1.4.0.zip",
+      "sha256": "37e5533d85d62b3a99061dcd379a7ddbfc9a129ad645798bd1634c6c63c1038a",
       "privacy": [
-        "messages"
+        "messages",
+        "projectContext"
       ],
       "tags": [
         "提示词",
