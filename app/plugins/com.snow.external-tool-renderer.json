@@ -1,0 +1,27 @@
+{
+  "id": "com.snow.external-tool-renderer",
+  "kind": "plugin",
+  "name": {
+    "default": "Tool Gallery",
+    "zh-CN": "工具画廊",
+    "zh-TW": "工具畫廊",
+    "en": "Tool Gallery"
+  },
+  "description": {
+    "default": "Unified cards for external MCP tool calls: argument summaries, tables, content blocks and error states, covering 24 search and developer services such as Anysearch, DBX, Firecrawl and Chrome DevTools. Requires a compatible desktop host.",
+    "zh-CN": "为外部 MCP 工具调用提供统一卡片：参数摘要、表格、内容块与错误状态，覆盖 Anysearch、DBX、Firecrawl、Chrome DevTools 等 24 类搜索与开发服务。需配套支持工具卡插槽的桌面宿主。",
+    "zh-TW": "為外部 MCP 工具呼叫提供統一卡片：參數摘要、表格、內容區塊與錯誤狀態，覆蓋 Anysearch、DBX、Firecrawl、Chrome DevTools 等 24 類搜尋與開發服務。需配套支援工具卡插槽的桌面宿主。",
+    "en": "Unified cards for external MCP tool calls: argument summaries, tables, content blocks and error states, covering 24 search and developer services such as Anysearch, DBX, Firecrawl and Chrome DevTools. Requires a compatible desktop host."
+  },
+  "repo": "https://github.com/BaSui01/snow-plugins",
+  "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/external-tool-renderer",
+  "author": "BaSui",
+  "version": "0.2.1",
+  "tag": "external-tool-renderer/v0.2.1",
+  "asset": "external-tool-renderer-0.2.1.zip",
+  "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/external-tool-renderer%2Fv0.2.1/external-tool-renderer-0.2.1.zip",
+  "sha256": "279218884e446e617d4c97742e4adbe932108096e1ea62eb7356bac0c3f1cb01",
+  "privacy": [
+    "messages"
+  ]
+}
