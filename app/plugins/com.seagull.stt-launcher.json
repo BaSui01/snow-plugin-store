@@ -6,14 +6,14 @@
     "zh-CN": "本地语音服务"
   },
   "description": {
-    "default": "Start / stop / restart the local whisper.cpp transcription service and manage its models (multi-backend CUDA / Vulkan / CPU). Zero-config: stt_server.py ships with the plugin, the CPU whisper runtime auto-downloads on first start, and models download from the built-in library. Must be used together with the \"Local Speech Service\" client script: this panel only runs the service and provides no voice input by itself.",
-    "zh-CN": "启动 / 停止 / 重启本地 whisper.cpp 转写服务并管理识别模型，支持 CUDA / Vulkan / CPU 多后端自动择优。零配置：stt_server.py 随插件自带，服务目录留空自动定位，首次启动自动下载 CPU 运行时，模型在面板模型库下载，还可一键让 AI 帮装 GPU 后端。需与「本地语音服务」客户端脚本配合使用：本面板只负责起服务，本身不提供语音输入。"
+    "default": "Start / stop / restart the local whisper.cpp transcription service and manage its models (multi-backend CUDA / Vulkan / CPU). Zero-config: stt_server.py ships with the plugin, the CPU whisper runtime auto-downloads on first start, and models download from the built-in library. Must be used together with the \"Voice Input & Read Aloud\" client script: this panel only runs the service and provides no voice input by itself.",
+    "zh-CN": "启动 / 停止 / 重启本地 whisper.cpp 转写服务并管理识别模型，支持 CUDA / Vulkan / CPU 多后端自动择优。零配置：stt_server.py 随插件自带，服务目录留空自动定位，首次启动自动下载 CPU 运行时，模型在面板模型库下载，还可一键让 AI 帮装 GPU 后端。需与「语音输入与朗读」客户端脚本配合使用：本面板只负责起服务，本身不提供语音输入。"
   },
   "repo": "https://github.com/xb0or/snow-plugins",
-  "version": "1.5.0",
-  "tag": "stt-launcher/v1.5.0",
-  "asset": "com.seagull.stt-launcher-1.5.0.zip",
-  "sha256": "b7316d9a2578edf43656011e22564ce45de2a32e2f5014b2860cfdccca3c6d57",
+  "version": "1.5.2",
+  "tag": "stt-launcher/v1.5.2",
+  "asset": "com.seagull.stt-launcher-1.5.2.zip",
+  "sha256": "c67bcc5f30bd469a6cf187e6b8ca7e98b62fc1acb9eabb32728a4fa3d8155810",
   "author": "kedou",
   "privacy": [
     "terminal"
