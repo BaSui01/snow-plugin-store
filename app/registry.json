@@ -168,11 +168,11 @@
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/external-tool-renderer",
       "author": "BaSui",
-      "version": "0.2.1",
-      "tag": "external-tool-renderer/v0.2.1",
-      "asset": "external-tool-renderer-0.2.1.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/external-tool-renderer%2Fv0.2.1/external-tool-renderer-0.2.1.zip",
-      "sha256": "279218884e446e617d4c97742e4adbe932108096e1ea62eb7356bac0c3f1cb01",
+      "version": "0.3.0",
+      "tag": "external-tool-renderer/v0.3.0",
+      "asset": "external-tool-renderer-0.3.0.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/external-tool-renderer%2Fv0.3.0/external-tool-renderer-0.3.0.zip",
+      "sha256": "4b3e8fb13fc836cf4323dcc6b825e7c58329b41b3c5c192d85f4339562a504a2",
       "privacy": [
         "messages"
       ]
