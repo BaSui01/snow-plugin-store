@@ -7,19 +7,19 @@
     "zh-TW": "小說閱讀器"
   },
   "description": {
-    "default": "Floating TXT novel reader with adjustable opacity and position, wheel and hotkey paging, auto hide on mouse leave, chapter detection and auto scroll.",
-    "zh-CN": "悬浮 TXT 小说阅读器：可调透明度与显示位置，支持滚轮与快捷键翻页、鼠标移入显示移出隐藏，并带章节识别与自动滚动。",
-    "zh-TW": "懸浮 TXT 小說閱讀器：可調不透明度與顯示位置，支援滾輪與快捷鍵翻頁，滑鼠移入顯示移出隱藏，並具備章節識別與自動捲動。"
+    "default": "Novel reader with a floating TXT reading window (adjustable opacity and position, wheel and hotkey paging, auto hide on mouse leave, chapter detection and auto scroll), plus legado book-source import, multi-source search and online chapter reading with caching.",
+    "zh-CN": "小说阅读器：悬浮 TXT 阅读窗（可调透明度与显示位置、滚轮与快捷键翻页、鼠标移入显示移出隐藏、章节识别与自动滚动），并支持导入 legado 书源、多源并发搜索、在线追书与章节缓存。",
+    "zh-TW": "小說閱讀器：懸浮 TXT 閱讀窗（可調不透明度與顯示位置、滾輪與快捷鍵翻頁，滑鼠移入顯示移出隱藏、章節識別與自動捲動），並支援匯入 legado 書源、多源並發搜尋、線上追書與章節快取。"
   },
   "author": "azhu949",
   "repo": "https://github.com/azhu949/snow-plugins",
   "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-novel-reader",
-  "version": "1.0.1",
-  "tag": "novel-reader/v1.0.1",
-  "asset": "com.snow.novel-reader-1.0.1.zip",
-  "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.0.1/com.snow.novel-reader-1.0.1.zip",
-  "sha256": "7c9ecefdd08e050d033ab6dd0c1143a9ef4226da81556602b6c37693fff3dec3",
+  "version": "1.1.0",
+  "tag": "novel-reader/v1.1.0",
+  "asset": "com.snow.novel-reader-1.1.0.zip",
+  "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.1.0/com.snow.novel-reader-1.1.0.zip",
+  "sha256": "a5092b33ced4da39c15dbf1bf7f1ec455e4b3ac954636999e0cb4b5527ca9f5f",
   "privacy": [],
-  "tags": ["novel", "reader", "txt", "floating", "小说", "阅读器"],
+  "tags": ["novel", "reader", "txt", "floating", "legado", "book-source", "小说", "阅读器", "书源"],
   "icon": "lucide:BookOpen"
 }
