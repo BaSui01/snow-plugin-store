@@ -230,12 +230,14 @@
       "author": "azhu949",
       "repo": "https://github.com/azhu949/snow-plugins",
       "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-novel-reader",
-      "version": "1.1.0",
-      "tag": "novel-reader/v1.1.0",
-      "asset": "com.snow.novel-reader-1.1.0.zip",
-      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.1.0/com.snow.novel-reader-1.1.0.zip",
-      "sha256": "a5092b33ced4da39c15dbf1bf7f1ec455e4b3ac954636999e0cb4b5527ca9f5f",
-      "privacy": [],
+      "version": "1.2.0",
+      "tag": "novel-reader/v1.2.0",
+      "asset": "com.snow.novel-reader-1.2.0.zip",
+      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.2.0/com.snow.novel-reader-1.2.0.zip",
+      "sha256": "bb571bef39163d8245dc731b10541aab97559df97fd1268138ebf0fb8300c2e0",
+      "privacy": [
+        "network"
+      ],
       "tags": [
         "novel",
         "reader",
