@@ -10,13 +10,14 @@
     "zh-CN": "启动 / 停止 / 重启本地 whisper.cpp 转写服务并管理识别模型，支持 CUDA / Vulkan / CPU 多后端自动择优。零配置：stt_server.py 随插件自带，服务目录留空自动定位，首次启动自动下载 CPU 运行时，模型在面板模型库下载，还可一键让 AI 帮装 GPU 后端。需与「语音输入与朗读」客户端脚本配合使用：本面板只负责起服务，本身不提供语音输入。"
   },
   "repo": "https://github.com/xb0or/snow-plugins",
-  "version": "1.5.2",
-  "tag": "stt-launcher/v1.5.2",
-  "asset": "com.seagull.stt-launcher-1.5.2.zip",
-  "sha256": "c67bcc5f30bd469a6cf187e6b8ca7e98b62fc1acb9eabb32728a4fa3d8155810",
+  "version": "1.5.3",
+  "tag": "stt-launcher/v1.5.3",
+  "asset": "com.seagull.stt-launcher-1.5.3.zip",
+  "sha256": "de43ce1a5e270f7562a2681d7dbf3c76fb8c6b6876074ada973e7cb26d3ddf74",
   "author": "kedou",
   "privacy": [
-    "terminal"
+    "terminal",
+    "network"
   ],
   "tags": [
     "voice",
