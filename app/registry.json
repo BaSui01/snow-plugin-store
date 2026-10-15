@@ -82,10 +82,10 @@
         "zh-TW": "基於 hack.chat 的匿名聊天面板（界面顯示 ?SNOW），經本機零依賴橋接程序連接（宿主網路策略禁止面板直連外網）。暱稱持久化不隨重連變化，支援成員列表、代理自動探測、橋埠與自動連線設定。需 Node.js 14+ 與終端權限。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "0.4.0",
-      "tag": "snow-anon-chat/v0.4.0",
-      "asset": "com.seagull.snow-anon-chat-0.4.0.zip",
-      "sha256": "45f99e13991e23694adcf5b30aafc80ddeff1e1576c3f0f415659befdd12fda9",
+      "version": "0.5.0",
+      "tag": "snow-anon-chat/v0.5.0",
+      "asset": "com.seagull.snow-anon-chat-0.5.0.zip",
+      "sha256": "80a8c5e365e848c99845681ca72267badc65adc56bdb0a883c7cb368a82a91ab",
       "author": "kedou",
       "privacy": [
         "terminal"
@@ -205,14 +205,15 @@
       "repo": "https://github.com/BaSui01/snow-plugins",
       "homepage": "https://github.com/BaSui01/snow-plugins/tree/main/plugins/external-tool-renderer",
       "author": "BaSui",
-      "version": "0.3.0",
-      "tag": "external-tool-renderer/v0.3.0",
-      "asset": "external-tool-renderer-0.3.0.zip",
-      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/external-tool-renderer%2Fv0.3.0/external-tool-renderer-0.3.0.zip",
-      "sha256": "4b3e8fb13fc836cf4323dcc6b825e7c58329b41b3c5c192d85f4339562a504a2",
+      "version": "0.3.1",
+      "tag": "external-tool-renderer/v0.3.1",
+      "asset": "external-tool-renderer-0.3.1.zip",
+      "downloadUrl": "https://github.com/BaSui01/snow-plugins/releases/download/external-tool-renderer%2Fv0.3.1/external-tool-renderer-0.3.1.zip",
+      "sha256": "504389a42f07d153d1b6ca51daff794f179b0087e876e70127dfc0c2e42407bd",
       "privacy": [
         "messages"
-      ]
+      ],
+      "minAppVersion": "0.4.24"
     },
     {
       "id": "com.snow.novel-reader",
