@@ -69,6 +69,36 @@
       "icon": "lucide:Store"
     },
     {
+      "id": "com.seagull.snow-anon-chat",
+      "kind": "plugin",
+      "name": {
+        "default": "Snow Anonymous Chat",
+        "zh-CN": "Snow 匿名聊天",
+        "zh-TW": "Snow 匿名聊天"
+      },
+      "description": {
+        "default": "Anonymous chat panel for hack.chat (shown as ?SNOW) via a local zero-dependency bridge process. Persistent nickname across reconnects, member list, proxy auto-detect. Requires Node.js 14+ and terminal permission.",
+        "zh-CN": "基于 hack.chat 的匿名聊天面板（界面显示 ?SNOW），经本机零依赖桥接进程连接（宿主网络策略禁止面板直连外网）。昵称持久化不随重连变化，支持成员列表、代理自动探测、桥端口与自动连接设置。需 Node.js 14+ 与终端权限。",
+        "zh-TW": "基於 hack.chat 的匿名聊天面板（界面顯示 ?SNOW），經本機零依賴橋接程序連接（宿主網路策略禁止面板直連外網）。暱稱持久化不隨重連變化，支援成員列表、代理自動探測、橋埠與自動連線設定。需 Node.js 14+ 與終端權限。"
+      },
+      "repo": "https://github.com/xb0or/snow-plugins",
+      "version": "0.4.0",
+      "tag": "snow-anon-chat/v0.4.0",
+      "asset": "com.seagull.snow-anon-chat-0.4.0.zip",
+      "sha256": "45f99e13991e23694adcf5b30aafc80ddeff1e1576c3f0f415659befdd12fda9",
+      "author": "kedou",
+      "privacy": [
+        "terminal"
+      ],
+      "tags": [
+        "chat",
+        "anonymous",
+        "hackchat",
+        "social"
+      ],
+      "icon": "lucide:MessagesSquare"
+    },
+    {
       "id": "com.seagull.stt-launcher",
       "kind": "plugin",
       "name": {
