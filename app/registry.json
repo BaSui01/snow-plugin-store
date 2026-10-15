@@ -51,11 +51,14 @@
         "zh-CN": "聚合公开技能索引（官方技能 / 本地技能 / 社区源 / skills.sh），支持搜索、分类折叠过滤、分页浏览、全局或项目级一键安装或让 AI 代装；skills.sh 卡片描述自动从详情页补齐。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.2.0",
-      "tag": "v1.2.0",
-      "asset": "com.seagull.skill-store-1.2.0.zip",
-      "sha256": "944c0a4dd970fead084df720abd1bc072db78dc9464bf4b85bb5f50d30a564e0",
+      "version": "1.2.1",
+      "tag": "skill-store/v1.2.1",
+      "asset": "com.seagull.skill-store-1.2.1.zip",
+      "sha256": "2bca50dc2644f68ae9d183f11f477f111bd0df3e4089e5587bff498139fd4183",
       "author": "kedou",
+      "privacy": [
+        "network"
+      ],
       "tags": [
         "skills",
         "store",
@@ -77,13 +80,14 @@
         "zh-CN": "启动 / 停止 / 重启本地 whisper.cpp 转写服务并管理识别模型，支持 CUDA / Vulkan / CPU 多后端自动择优。零配置：stt_server.py 随插件自带，服务目录留空自动定位，首次启动自动下载 CPU 运行时，模型在面板模型库下载，还可一键让 AI 帮装 GPU 后端。需与「语音输入与朗读」客户端脚本配合使用：本面板只负责起服务，本身不提供语音输入。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.5.2",
-      "tag": "stt-launcher/v1.5.2",
-      "asset": "com.seagull.stt-launcher-1.5.2.zip",
-      "sha256": "c67bcc5f30bd469a6cf187e6b8ca7e98b62fc1acb9eabb32728a4fa3d8155810",
+      "version": "1.5.3",
+      "tag": "stt-launcher/v1.5.3",
+      "asset": "com.seagull.stt-launcher-1.5.3.zip",
+      "sha256": "de43ce1a5e270f7562a2681d7dbf3c76fb8c6b6876074ada973e7cb26d3ddf74",
       "author": "kedou",
       "privacy": [
-        "terminal"
+        "terminal",
+        "network"
       ],
       "tags": [
         "voice",
@@ -136,13 +140,14 @@
         "zh-CN": "读取使用量统计，按内置官方刊例/OpenRouter 换算单价估算各模型 API 使用成本，支持每日成本条形图与 CSV 导出，可一键从 OpenRouter 同步价格。"
       },
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.2.2",
-      "tag": "usage-cost/v1.2.2",
-      "asset": "com.seagull.usage-cost-1.2.2.zip",
-      "sha256": "d39d8c35bbb09cdb38795e4f8dd9a7563659981fd2cfa676d70da3330c89e32c",
+      "version": "1.2.3",
+      "tag": "usage-cost/v1.2.3",
+      "asset": "com.seagull.usage-cost-1.2.3.zip",
+      "sha256": "e2367f9aedfa87bfdebfef2772022274c7a03973d2aa26d24dd0cf67ee43a049",
       "author": "kedou",
       "privacy": [
-        "usage"
+        "usage",
+        "network"
       ],
       "tags": [
         "usage",
@@ -385,12 +390,13 @@
       },
       "author": "kedou",
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.4.2",
-      "tag": "notify-hub/v1.4.2",
+      "version": "1.4.4",
+      "tag": "notify-hub/v1.4.4",
       "asset": "snow-notify-hub.user.js",
-      "sha256": "e14f0fa40dbded805efeea9db6615b4f6cdbfaafd83c22fa655b45e7997f51a0",
+      "sha256": "46270fb8f4a16994162c12d8c09bf8b1bb6e771fd3e6e2f2da274b7b8fd578fb",
       "privacy": [
-        "messages"
+        "messages",
+        "network"
       ],
       "tags": [
         "client-script",
@@ -412,11 +418,13 @@
       },
       "author": "kedou",
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.5.2",
-      "tag": "voice-io/v1.5.2",
+      "version": "1.5.3",
+      "tag": "voice-io/v1.5.3",
       "asset": "snow-voice-io.user.js",
-      "sha256": "b3e26747191f1c30d44f453c5f914a80f9a67cfef5dd2e786705bd673d456d69",
-      "privacy": [],
+      "sha256": "22d15815b0b411ef58ace5e1b72641a91d1ac8ef7b4934a8fcf6e5f0824cc3a6",
+      "privacy": [
+        "network"
+      ],
       "tags": [
         "client-script",
         "voice",
