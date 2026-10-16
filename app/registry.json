@@ -40,6 +40,38 @@
       "icon": "lucide:FolderTree"
     },
     {
+      "id": "com.seagull.side-ask",
+      "kind": "plugin",
+      "name": {
+        "default": "Side Ask",
+        "zh-CN": "旁路问答",
+        "zh-TW": "旁路問答"
+      },
+      "description": {
+        "default": "Ask side questions in a panel with its own input box. Answers stream into the panel only: never filled into the composer, never sent, never written to the conversation history (the Q&A log lives in plugin-private storage). The focused conversation is auto-attached as context and refreshed when you switch conversations. The Progress report button summarizes the main conversation's current task (/btw style: done / in progress / todo / blockers), and can also run automatically at an interval while the main session is streaming. Answers render as Markdown with tool-call markers stripped. Requests never carry conversationId, reuse the current API profile and ask for no extra API key.",
+        "zh-CN": "在面板内用自己的输入框提旁路问题，回答只流式显示在面板里：不回填输入框、不发送、不写入会话历史（问答记录只存在插件私有存储）。自动携带焦点会话作为上下文，切换会话时自动失效并重新读取。「进度报告」按 /btw 的语义对主会话当前任务生成进度总结（已完成 / 进行中 / 待办 / 阻塞或风险），主会话运行中还能按间隔自动生成。回答按 Markdown 渲染，并自动清洗模型吐出的工具调用标记。请求不传 conversationId，复用当前 API 档案，不额外索取密钥。",
+        "zh-TW": "在面板內用自己的輸入框提旁路問題，回答只串流顯示在面板裡：不回填輸入框、不傳送、不寫入會話歷史（問答記錄只存在外掛私有儲存）。自動攜帶焦點會話作為上下文，切換會話時自動失效並重新讀取。「進度報告」按 /btw 的語義對主會話目前任務產生進度總結（已完成 / 進行中 / 待辦 / 阻塞或風險），主會話執行中還可按間隔自動產生。回答按 Markdown 呈現，並自動清洗模型吐出的工具呼叫標記。請求不傳 conversationId，重用目前 API 檔案，不額外索取密鑰。"
+      },
+      "repo": "https://github.com/xb0or/snow-plugins",
+      "version": "0.3.4",
+      "tag": "side-ask/v0.3.4",
+      "asset": "com.seagull.side-ask-0.3.4.zip",
+      "sha256": "800da9dd3f1993ac65c31fd9f763e2f89dfcf82939a504f02453a3dd9297bb1b",
+      "author": "kedou",
+      "privacy": [
+        "messages",
+        "conversations"
+      ],
+      "tags": [
+        "side-ask",
+        "panel",
+        "no-history",
+        "context",
+        "progress-report"
+      ],
+      "icon": "lucide:MessageCircleQuestionMark"
+    },
+    {
       "id": "com.seagull.skill-store",
       "kind": "plugin",
       "name": {
