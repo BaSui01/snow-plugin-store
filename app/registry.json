@@ -444,6 +444,33 @@
     },
     {
       "kind": "script",
+      "id": "snow.eye-care-ball",
+      "name": {
+        "default": "Eye Care Ball · Follow the Light",
+        "zh-CN": "护眼操 · 跟随光球",
+        "zh-TW": "護眼操 · 跟隨光球"
+      },
+      "description": {
+        "default": "90-second eye workout: follow a glowing ball for smooth pursuit, saccades and near–far focus to relax the ciliary muscle. Reminder text travels with the ball — move your eyes, not your neck. Entry: the “Eye care” button on the right of the top bar.",
+        "zh-CN": "90 秒护眼操：眼球跟随光球做平滑追踪、快速扫视与远近调焦，锻炼并放松睫状肌。提醒文字贴着光球移动 —— 只动眼球，不转脖子。入口：顶栏右侧的「护眼操」按钮。",
+        "zh-TW": "90 秒護眼操：眼球跟隨光球做平滑追蹤、快速掃視與遠近調焦，鍛鍊並放鬆睫狀肌。提醒文字貼著光球移動 —— 只動眼球，不轉脖子。入口：頂欄右側的「護眼操」按鈕。"
+      },
+      "author": "MayDay-wpf",
+      "repo": "https://github.com/MayDay-wpf/snow-app-plugins",
+      "version": "1.0.0",
+      "tag": "eye-care-ball/v1.0.0",
+      "asset": "eye-care-ball.user.js",
+      "sha256": "551290bee5ed7f6c309fdad005d461a882811bdfcfa1432af66c34ad4eaaba6c",
+      "tags": [
+        "client-script",
+        "eye-care",
+        "health",
+        "focus"
+      ],
+      "icon": "lucide:Eye"
+    },
+    {
+      "kind": "script",
       "id": "snow.notify-hub",
       "name": {
         "default": "Notification Hub",
