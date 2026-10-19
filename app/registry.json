@@ -248,6 +248,44 @@
       "minAppVersion": "0.4.24"
     },
     {
+      "id": "com.snow.fix-bench",
+      "kind": "script",
+      "name": {
+        "default": "Fix Bench",
+        "zh-CN": "修复工作台",
+        "zh-TW": "修復工作台"
+      },
+      "description": {
+        "default": "Client script plugin: a floating workbench opened from the chat input toolbar, covering code review, issue tracking, batch fixing and result cleanup; issues are stored per project in the script's private storage.",
+        "zh-CN": "客户端脚本插件：聊天输入框工具栏扳手入口与居中浮层工作台，覆盖代码审查、issue 跟踪、批量修复与结果清理的闭环；issue 按项目隔离保存在脚本私有存储。",
+        "zh-TW": "客戶端腳本外掛：聊天輸入框工具列扳手入口與置中浮層工作台，涵蓋程式碼審查、issue 追蹤、批次修復與結果清理的閉環；issue 依專案隔離儲存在腳本私有儲存。"
+      },
+      "author": "azhu949",
+      "repo": "https://github.com/azhu949/snow-plugins",
+      "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-fix-bench",
+      "version": "2.8.5",
+      "tag": "fix-bench/v2.8.5",
+      "asset": "snow-fix-bench.user.js",
+      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/fix-bench%2Fv2.8.5/snow-fix-bench.user.js",
+      "sha256": "783e9fcbc22c7b93ddcf53b29cb4a41c70a33ddf2058728656382e51c3cfee0e",
+      "privacy": [
+        "conversations",
+        "messages",
+        "git",
+        "mcpSecrets"
+      ],
+      "tags": [
+        "client-script",
+        "code-review",
+        "issues",
+        "batch-fix",
+        "workbench",
+        "代码审查",
+        "缺陷修复"
+      ],
+      "icon": "lucide:Wrench"
+    },
+    {
       "id": "com.snow.novel-reader",
       "kind": "plugin",
       "name": {
@@ -263,11 +301,11 @@
       "author": "azhu949",
       "repo": "https://github.com/azhu949/snow-plugins",
       "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-novel-reader",
-      "version": "1.2.0",
-      "tag": "novel-reader/v1.2.0",
-      "asset": "com.snow.novel-reader-1.2.0.zip",
-      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.2.0/com.snow.novel-reader-1.2.0.zip",
-      "sha256": "bb571bef39163d8245dc731b10541aab97559df97fd1268138ebf0fb8300c2e0",
+      "version": "1.2.1",
+      "tag": "novel-reader/v1.2.1",
+      "asset": "com.snow.novel-reader-1.2.1.zip",
+      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.2.1/com.snow.novel-reader-1.2.1.zip",
+      "sha256": "5ca71ea43e9dbcd5bafac0abf1ef8ddb339a1fbc3dd960a8b1b6263fad03b9fb",
       "privacy": [
         "network"
       ],
