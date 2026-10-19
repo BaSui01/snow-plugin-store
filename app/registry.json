@@ -220,6 +220,46 @@
       "icon": "lucide:CircleDollarSign"
     },
     {
+      "id": "com.shiroeirin.wechat-feed",
+      "kind": "plugin",
+      "name": {
+        "default": "WeChat Panel",
+        "zh-CN": "微信群聊",
+        "zh-TW": "微信群聊"
+      },
+      "description": {
+        "default": "WeChat group-chat feed, statistics and reports, plus an MCP tool console — backed by a locally installed wechat MCP server (read-only). Renders decrypted chat images and real emoticons, builds member profiles, and exports daily/weekly/monthly/yearly reports as Markdown or an HTML long image.",
+        "zh-CN": "基于本机 wechat MCP 的微信群聊信息流、统计与报告，以及可直接调用的 MCP 工具台（只读）。支持聊天图片解密直出、真实表情渲染、成员画像，以及日报/周报/月报/年报导出为 Markdown 或 HTML 长图。",
+        "zh-TW": "基於本機 wechat MCP 的微信群聊資訊流、統計與報告，以及可直接呼叫的 MCP 工具台（唯讀）。支援聊天圖片解密直出、真實表情渲染、成員畫像，以及日報/週報/月報/年報匯出為 Markdown 或 HTML 長圖。"
+      },
+      "author": "ShiroEirin",
+      "repo": "https://github.com/ShiroEirin/snow-wechat-panel",
+      "homepage": "https://github.com/ShiroEirin/snow-wechat-panel",
+      "version": "0.32.1",
+      "tag": "v0.32.1",
+      "asset": "snow-wechat-panel-v0.32.1.zip",
+      "sha256": "1b7a1924afe1124f006532edfbaea7f0ab17fa4387c4bef80854c0d2f896dda5",
+      "privacy": [
+        "mcpSecrets",
+        "conversations",
+        "messages",
+        "filesystem",
+        "scheduledTasks"
+      ],
+      "tags": [
+        "wechat",
+        "wechat-panel",
+        "chat",
+        "mcp",
+        "digest",
+        "statistics",
+        "member-profile",
+        "群聊",
+        "聊天记录"
+      ],
+      "icon": "lucide:MessageSquare"
+    },
+    {
       "id": "com.snow.external-tool-renderer",
       "kind": "plugin",
       "name": {
