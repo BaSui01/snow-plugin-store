@@ -6,15 +6,15 @@
     "zh-CN": "通知推送中心"
   },
   "description": {
-    "default": "Client script: get notified when an AI turn finishes — push via 7 channels (ServerChan / PushPlus / Bark / DingTalk / WeCom / Telegram / Feishu), chime and in-app toast. Also watches background conversations: a turn finishing while you are in another conversation still notifies. Settings open from the bell button next to the todo list button in the top bar.",
-    "zh-CN": "客户端脚本：一轮 AI 回复结束时提醒 —— 7 渠道推送（Server酱 / PushPlus / Bark / 钉钉 / 企业微信 / Telegram / 飞书）+ 提示音 + 应用内提示条。支持后台会话：切到其他会话时，原会话跑完同样提醒。设置入口在顶栏待办列表旁的铃铛按钮。"
+    "default": "Client script: get notified when an AI turn finishes — push via 7 channels (ServerChan / PushPlus / Bark / DingTalk / WeCom / Telegram / Feishu), chime and in-app toast. Also watches background conversations: a turn finishing while you are in another conversation still notifies. Settings open from the bell button in the top bar (next to the todo list button when present, otherwise in the same top-bar position).",
+    "zh-CN": "客户端脚本：一轮 AI 回复结束时提醒 —— 7 渠道推送（Server酱 / PushPlus / Bark / 钉钉 / 企业微信 / Telegram / 飞书）+ 提示音 + 应用内提示条。支持后台会话：切到其他会话时，原会话跑完同样提醒。设置入口在顶栏铃铛按钮（有待办时在待办列表按钮右侧，无待办时停在同一顶栏位置）。"
   },
   "author": "kedou",
   "repo": "https://github.com/xb0or/snow-plugins",
-  "version": "1.4.4",
-  "tag": "notify-hub/v1.4.4",
+  "version": "1.4.5",
+  "tag": "notify-hub/v1.4.5",
   "asset": "snow-notify-hub.user.js",
-  "sha256": "46270fb8f4a16994162c12d8c09bf8b1bb6e771fd3e6e2f2da274b7b8fd578fb",
+  "sha256": "ea35bae27522d4a014b2dc5c47c5d3e4add58ffcefefe1734de3218bc0a2d5d8",
   "privacy": ["messages", "network"],
   "tags": [
     "client-script",
