@@ -263,11 +263,11 @@
       "author": "azhu949",
       "repo": "https://github.com/azhu949/snow-plugins",
       "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-fix-bench",
-      "version": "2.8.5",
-      "tag": "fix-bench/v2.8.5",
+      "version": "2.8.6",
+      "tag": "fix-bench/v2.8.6",
       "asset": "snow-fix-bench.user.js",
-      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/fix-bench%2Fv2.8.5/snow-fix-bench.user.js",
-      "sha256": "783e9fcbc22c7b93ddcf53b29cb4a41c70a33ddf2058728656382e51c3cfee0e",
+      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/fix-bench%2Fv2.8.6/snow-fix-bench.user.js",
+      "sha256": "c17e3b7004c7dd8dd7890bac4fcf646f8f2267535a2ce0e28143f60a48786ad8",
       "privacy": [
         "conversations",
         "messages",
@@ -301,11 +301,11 @@
       "author": "azhu949",
       "repo": "https://github.com/azhu949/snow-plugins",
       "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-novel-reader",
-      "version": "1.2.1",
-      "tag": "novel-reader/v1.2.1",
-      "asset": "com.snow.novel-reader-1.2.1.zip",
-      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.2.1/com.snow.novel-reader-1.2.1.zip",
-      "sha256": "5ca71ea43e9dbcd5bafac0abf1ef8ddb339a1fbc3dd960a8b1b6263fad03b9fb",
+      "version": "1.3.0",
+      "tag": "novel-reader/v1.3.0",
+      "asset": "com.snow.novel-reader-1.3.0.zip",
+      "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.3.0/com.snow.novel-reader-1.3.0.zip",
+      "sha256": "e2074b3447aa16886feefe14602f9aaaae80b77cb5b6653c02be64322ac428aa",
       "privacy": [
         "network"
       ],
@@ -515,15 +515,15 @@
         "zh-CN": "通知推送中心"
       },
       "description": {
-        "default": "Client script: get notified when an AI turn finishes — push via 7 channels (ServerChan / PushPlus / Bark / DingTalk / WeCom / Telegram / Feishu), chime and in-app toast. Also watches background conversations: a turn finishing while you are in another conversation still notifies. Settings open from the bell button next to the todo list button in the top bar.",
-        "zh-CN": "客户端脚本：一轮 AI 回复结束时提醒 —— 7 渠道推送（Server酱 / PushPlus / Bark / 钉钉 / 企业微信 / Telegram / 飞书）+ 提示音 + 应用内提示条。支持后台会话：切到其他会话时，原会话跑完同样提醒。设置入口在顶栏待办列表旁的铃铛按钮。"
+        "default": "Client script: get notified when an AI turn finishes — push via 7 channels (ServerChan / PushPlus / Bark / DingTalk / WeCom / Telegram / Feishu), chime and in-app toast. Also watches background conversations: a turn finishing while you are in another conversation still notifies. Settings open from the bell button in the top bar (next to the todo list button when present, otherwise in the same top-bar position).",
+        "zh-CN": "客户端脚本：一轮 AI 回复结束时提醒 —— 7 渠道推送（Server酱 / PushPlus / Bark / 钉钉 / 企业微信 / Telegram / 飞书）+ 提示音 + 应用内提示条。支持后台会话：切到其他会话时，原会话跑完同样提醒。设置入口在顶栏铃铛按钮（有待办时在待办列表按钮右侧，无待办时停在同一顶栏位置）。"
       },
       "author": "kedou",
       "repo": "https://github.com/xb0or/snow-plugins",
-      "version": "1.4.4",
-      "tag": "notify-hub/v1.4.4",
+      "version": "1.4.5",
+      "tag": "notify-hub/v1.4.5",
       "asset": "snow-notify-hub.user.js",
-      "sha256": "46270fb8f4a16994162c12d8c09bf8b1bb6e771fd3e6e2f2da274b7b8fd578fb",
+      "sha256": "ea35bae27522d4a014b2dc5c47c5d3e4add58ffcefefe1734de3218bc0a2d5d8",
       "privacy": [
         "messages",
         "network"
