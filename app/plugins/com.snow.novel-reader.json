@@ -14,12 +14,24 @@
   "author": "azhu949",
   "repo": "https://github.com/azhu949/snow-plugins",
   "homepage": "https://github.com/azhu949/snow-plugins/tree/main/snow-novel-reader",
-  "version": "1.2.0",
-  "tag": "novel-reader/v1.2.0",
-  "asset": "com.snow.novel-reader-1.2.0.zip",
-  "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.2.0/com.snow.novel-reader-1.2.0.zip",
-  "sha256": "bb571bef39163d8245dc731b10541aab97559df97fd1268138ebf0fb8300c2e0",
-  "privacy": ["network"],
-  "tags": ["novel", "reader", "txt", "floating", "legado", "book-source", "小说", "阅读器", "书源"],
+  "version": "1.2.1",
+  "tag": "novel-reader/v1.2.1",
+  "asset": "com.snow.novel-reader-1.2.1.zip",
+  "downloadUrl": "https://github.com/azhu949/snow-plugins/releases/download/novel-reader%2Fv1.2.1/com.snow.novel-reader-1.2.1.zip",
+  "sha256": "5ca71ea43e9dbcd5bafac0abf1ef8ddb339a1fbc3dd960a8b1b6263fad03b9fb",
+  "privacy": [
+    "network"
+  ],
+  "tags": [
+    "novel",
+    "reader",
+    "txt",
+    "floating",
+    "legado",
+    "book-source",
+    "小说",
+    "阅读器",
+    "书源"
+  ],
   "icon": "lucide:BookOpen"
 }
